@@ -1,0 +1,51 @@
+              Realtime Fraud Detection on CreditCard Dataset
+
+Abstract: The financial industries and services that required financial transactions are suffering from fraud
+related loss. The challenge of financial industry is to development of realtime claim assessment and improve
+the accuracy of the fraud detection. The machine learning  approach to fraud detection has got popularity in
+recent years and industry are moving from rule-based approach to ML-based approach.
+
+In this project work, We will development a realtime time machine learning model that will identify a transactions
+is fraud or not and improve accuracy of fraud detection.
+
+
+Introduction: In this work we will preprocess the dataset. We will do features selections and features extraction
+by PCA. We will train machine learning models(SVM, Random Forests, K-nearest, Voting-classifier) with best
+parameters and will selection best model best performance. Best Model will be deployed as REST Service.
+
+Dataset: transactions.txt
+Total number of rows: 641,914
+Total number of columns: 29
+
+Dataset preparation and preprocessing:
+  We will do data clean up. fill
+  Data collection
+
+  Data visualization
+
+  Labeling
+
+  Data selection
+
+  Data preprocessing
+
+
+Dataset splitting:
+   Clean dataset will be partition into tree subsets - train, test  and validation sets.
+
+Modeling:
+   Train different models and define which one provides the most accurate prediction.
+
+  Model training
+
+  Model evaluation and testing
+
+  Cross-validation:
+
+  Improving predictions with ensemble methods: we will use voting classifier. to see
+  it they improve over individaul model.
+
+ Model deployment: Best model will be deployed on server and prediction services will be provided
+ as REST services. Any user can use rest api and can get realtime reponse.
+
+ Conclusion:
