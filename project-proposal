@@ -18,16 +18,15 @@ Total number of rows: 641,914
 Total number of columns: 29
 
 Dataset preparation and preprocessing:
-  We will do data clean up. fill
-  Data collection
+  Our dataset has missing values we will clean up data. We will first clean data then we will convert categorical data
+  to numeric. We scaled data to standard level so that it can feed into model We will select importance features form
+  the dataset using RandomForestRegressor. Using PCA or t-SNE we will visualize dataset
 
-  Data visualization
 
-  Labeling
-
-  Data selection
-
-  Data preprocessing
+FlowChart:
+      Raw data --> Clean up --> convertCategorialToNumeric -->  scaled standard --> Select important features --> visualize dataset
+      --> splitting data into train, validation and test set --> fit models --> validate models ->  evaluate model on test sets
+      --> find model with best accuracy --> deploy model as REST Service
 
 
 Dataset splitting:
@@ -35,17 +34,8 @@ Dataset splitting:
 
 Modeling:
    Train different models and define which one provides the most accurate prediction.
-
-  Model training
-
-  Model evaluation and testing
-
-  Cross-validation:
-
-  Improving predictions with ensemble methods: we will use voting classifier. to see
-  it they improve over individaul model.
+   we will train each model on data . we will cross validate model  and then evaluate the model
+   performance test set. We will use voting classifier to see it they improve over individual model.
 
  Model deployment: Best model will be deployed on server and prediction services will be provided
- as REST services. Any user can use rest api and can get realtime reponse.
-
- Conclusion:
+ as REST services. Any user can use rest api and can get realtime response.
